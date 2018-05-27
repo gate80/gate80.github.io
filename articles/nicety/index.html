@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!--
+  Powered by Gate5 engine
+
+  Copyright (c) 2008-2009 Sergey I. Sharybin <g.ulairi@gmail.com>
+
+  This program can be distributed under the terms of GNU GPL.
+-->
+
+<html>
+  
+<!-- Mirrored from school9.perm.ru/gate/articles/nicety/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 May 2018 16:59:47 GMT -->
+<head>
+    <title>GATE</title>
+<link rel="stylesheet" type="text/css" href="../../styles/content.css">
+<link rel="stylesheet" type="text/css" href="../../styles/pages.css">
+<meta http-equiv="content-language" content="ru">
+<meta name="url" content="../../index.html">
+<meta name="keywords" content="school9 sch9 gateway gate tester webtester">
+<meta name="description" content="OnLine testing system">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="all">
+<link rel="icon" href="../../pics/favicon.ico" type="image/x-icon">
+<link rel="SHORTCUT ICON" href="../../pics/favicon.ico">
+<script language="JavaScript" type="text/javascript">
+  var http_host = "https://school9.perm.ru/";
+  var document_root = "https://school9.perm.ru/gate";
+  var engine = "GECKO";
+  var isGecko = true;
+  var isMSIE = false;
+  var force_url = '';
+</script>
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/core.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/content.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/ipc.js"></script>
+    <script language="JavaScript" type="text/javascript">
+      function body_onmousemove (event) {
+        if (core_StoreMousePos (event)) return false;
+        return true;
+      }
+    </script>
+  </head>
+  <body onmousemove="if (!body_onmousemove (event)) return false;" id="content">
+    <table width="100%">
+      <tr>
+        <td id="leftCatchword" valign="top">
+          <table>
+            <tr>
+              <td>
+                <div id="logo">
+                  <img src="../../pics/wt_l.gif" alt="logo" onclick="nav ('/gate');">
+                </div>
+                <div id="nav">
+<div class="menu">
+  <div class="cpt">Навигация</div>
+  <div class="body">
+    <ul>
+      <li><a href="../../index.html">Заглавная страница</a></li>
+      <li><a href="../../tester/index359b.html?redirect=%2Fgate%2Farticles%2Fnicety%2F">Олимпиады</a></li>
+      <li><a href="../trainings/index.html">Тренировки</a></li>
+    </ul>
+  </div>
+</div>
+<div class="menu" style="padding-top: 8px;">
+  <div class="cpt">Wiki</div>
+  <div class="body">
+    <ul>
+      <li><a href="../news/index.html">Новости</a></li>
+      <li><a href="../FAQ/index.html">ЧаВо</a></li>
+      <li><a href="index.html">Тонкости работы в системе</a></li>
+      <li><a href="../rules/index.html">Правила</a></li>
+      <li><a href="../about/index.html">О проекте</a></li>
+      <li><a href="../contacts/index.html">Наши контакты</a></li>
+    </ul>
+  </div>
+</div>
+<div class="menu" style="padding-top: 8px;">
+  <div class="cpt">Ресурсы</div>
+  <div class="body">
+    <ul>
+      <li><a href="../../resources/downloads/index.html">Downloads</a></li>
+    </ul>
+  </div>
+</div>
+                </div>
+                <img src="../../pics/clear.gif" width="145" height="1" alt="">
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td valign="top" style="width: 100%;">
+          <table id="container">
+            <tr><td style="padding: 2px 0;"><div class="transp_menu"><table class="hor_menu"><tr><td align="right">
+  <table class="cntsmall"><tr>
+    <td class="first"><span class="imghref" style="background: url(../../pics/key.gif) no-repeat left center;"><a href="../../login/index359b.html?redirect=%2Fgate%2Farticles%2Fnicety%2F">Представиться системе / Зарегистрироваться</a></span></td>
+    <td class="sep">::</td>
+    <td><a href="../../admin/index359b.html?redirect=%2Fgate%2Farticles%2Fnicety%2F">Административный интерфейс</a></td>
+  </tr></table>
+</td></tr></table>
+</div>
+</td></tr>
+            <tr>
+              <td style="padding-left: 8px;">
+                <table class="frame">
+  <tr class="h">
+    <td class="sp"><img src="../../pics/clear.gif" class="sep16" alt=""></td>
+    <td class="tc"><div><a href="JavaScript:refreshPage ('%2Fgate%2Farticles%2Fnicety%2F')" title="Чтение статьи">Статья</a></div></td>
+    <td class="sp"><img src="../../pics/clear.gif" class="sep16" alt=""></td>
+    <td class="sp" style="width: 100%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5"><div class="frame_cnt"><div id="navigator">Тонкости работы в системе</div>
+
+<p>В связи с тем, что тестирование проходит на базе операчионной системы Linux, хотелось бы описать основные тонкости написания солюшена для сдачи в этой тестирующей системы.</p><p>Во-первых, система критична к ргистру символов в именах файлов. Так что открывать файлы для чтения и записи необходимо именно с теми именами, которые указаны в электронной версии условий. Здесь же хочется отметить тот факт, что названия юнитов в Delphi и FPC тоже необходимо указывать в том формате, в котором эти юниты хранятся на сервере. Основные для Delphi это юниты SysUtils, Math, StrUtils (более полный список юнитов в том формате, в котором их следует писать, я приведу нескольско позже).<br></p><p>Так же есть неподтвержденный баг с директивой <span class="source">{$APPTYPE CONSOLE}</span> при сдаче на Delphi. Во время дебага компилятора, он мне постоянно выдавал Runtime Error, и стоило только убрать эту директиву, сразу же возвращался Accepted. Но, как я смотрю, народ об этом не знал и все парадоксальным случаем работает. В общем, если вдруг у Вас появится RE по непонятной причине, попробуйте убрать вышеуказанную директиву.<br></p></div></td>
+  </tr>
+</table>
+
+
+              </td>
+            </tr>
+          </table>
+          <img src="../../pics/clear.gif" width="620" height="1" alt="">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><div id="footer" style="padding-bottom: 4px;">
+  <!--<center>
+    <small>
+      <span class="contentSub">[DEBUG] Страница была сгенерирована за 0.022794961929321сек. Использовано запросов: 29</span>
+    </small>
+  </center>-->
+  <div id="hr" style="margin: 6px 0 1px 0;"></div>
+  <table width="100%" class="small">
+    <tr>
+      <td width="50%">Powered by Gate5 Engine (c) 2006-2010 nazgul</td>
+      <td align="right">Все права защищены (с) 2008 sch9 team</td>
+    </tr>
+  </table>
+</div>
+
+</td>
+      </tr>
+    </table>
+  </body>
+
+<!-- Mirrored from school9.perm.ru/gate/articles/nicety/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 May 2018 16:59:48 GMT -->
+</html>
