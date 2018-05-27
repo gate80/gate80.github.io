@@ -27,7 +27,7 @@ function CONTENT_SetOpening (wnd) {
     wnd.CONTENT_wait_widget = document.createElement ('div');
     wnd.CONTENT_wait_widget.className = 'cdialog';
     wnd.CONTENT_wait_widget.innerHTML = '<table class="clear" style="margin: 0 4px; height: 26px; width: 100%;"><tr><td style="padding-right: 8px;"><img src="' +
-        document_root + '/pics/wait.gif"></td><td>Загрузка...</td></tr></table>';
+        document_root + '/pics/wait.gif"></td><td>Р—Р°РіСЂСѓР·РєР°...</td></tr></table>';
   }
 
   wnd.CONTENT_wait_widget.style.left = (w - 96) / 2 + 'px';

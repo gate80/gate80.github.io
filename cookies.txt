@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+school9.perm.ru	TRUE	/	FALSE	1999999999	PHPSESSID	t7q2rneptjqovs4oth614mqa02
+

@@ -112,7 +112,7 @@ function ipc_send_request (addr, post, callback) {
   } else if (engine=='DONKEY') {
     var http_request = new ActiveXObject('Microsoft.XMLHTTP');
   } else {
-    alert ('Ваш браузер использует неизвестный движок. Выполнение операции невозможно.');
+    alert ('Р’Р°С€ Р±СЂР°СѓР·РµСЂ РёСЃРїРѕР»СЊР·СѓРµС‚ РЅРµРёР·РІРµСЃС‚РЅС‹Р№ РґРІРёР¶РѕРє. Р’С‹РїРѕР»РЅРµРЅРёРµ РѕРїРµСЂР°С†РёРё РЅРµРІРѕР·РјРѕР¶РЅРѕ.');
     return;
   }
 
