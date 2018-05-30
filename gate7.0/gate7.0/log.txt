@@ -1,0 +1,7 @@
+C:\Users\Èâàí\Desktop\gate7.0\Debug\gate7.0.exeTue May 29 17:10:44 2018
+{testâ„–;input;trueanswer;answer;true/false}
+1;1 1;2;;test
+2;0 -1;-1;;test
+3;1 2;3;;test
+4;1 3;4;;test
+5;1 4;5;;test
