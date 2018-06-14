@@ -1,3 +1,4 @@
 ﻿  main.cpp
 c1xx : warning C4199: двухэтапный поиск имен не поддерживается для C++/CLI, C++/CX или OpenMP. Используйте /Zc:twoPhase-
+c:\users\иван\desktop\gate7.0\gate7.0\main.cpp(90): warning C4018: <: несоответствие типов со знаком и без знака
   gate7.0.vcxproj -> C:\Users\Иван\Desktop\gate7.0\Debug\gate7.0.exe
